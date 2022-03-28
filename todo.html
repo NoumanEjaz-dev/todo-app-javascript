@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <!-- <h2>todo list</h2>
+    <div style="display: flex">
+      <input type="text" id="inputField" />
+      <button id="addToDoButton">ADD</button>
+    </div>
+    <div id="ToDoContainer"></div> -->
+
+    <!-- <h2>my todo list</h2>
+    <input type="text" id="inputbox" />
+    <button id="addTodo">add todos</button>
+    <div id="todoList" onclick="todoBtn()"></div>
+
+    <br />
+    <br /> -->
+
+    <button id="addTodo">+</button>
+    <p id="count">1 0</p>
+    <button id="addTodo">-</button>
+    <button id="addTodo" onclick="reset()">reset</button>
+
+    <!-- <script>
+      function todoBtn() {
+        let inputtext = document.getElementById("inputbox");
+        let addTodoBtn = document.getElementById("addTodo");
+        let todoList = document.getElementById("todoList");
+
+        var p = document.createElement("p");
+        // p.classList.add('para');
+        p.innerText = inputtext.value;
+        todoList.appendChild(p);
+        inputtext.value = " ";
+
+        p.addEventListener("click", function () {
+          p.style.textDecoration = "line-through";
+        });
+
+        p.addEventListener("dblclick", function () {
+          todoList.removeChild(p);
+        });
+      }
+    </script> -->
+
+    <!-- <script src="todo.js"></script> -->
+
+    <script>
+      function reset() {
+        document.getElementById("count").innerHTML = 0;
+      }
+    </script>
+  </body>
+</html>
